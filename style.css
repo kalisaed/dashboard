@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+    overflow: auto;
+}
+
+.imag-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.imag-box img {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    text-transform: capitalize;
+}
+
+h2 {
+    width: 150px;
+    align-self: center;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.menu {
+    background-color: #123;
+    width: 55px;
+    height: 100vh;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.menu:hover {
+    background-color: #123;
+    width: 260px;
+    height: 100vh;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 99%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+ul li a:hover,
+.active {
+    background-color: #001;
+    transition: 0.6s;
+}
+
+.down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #a00;
+}
+
+ul li a i {
+    font-size: 28px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content .title_info {
+    background-color: rgba(16 9 72 / 49%);
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.box {
+    flex-basis: 220px;
+    height: 200px;
+    background-color: #123;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.box span {
+    font-size: 38px;
+}
+
+.box p {
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.box i {
+    font-size: 48px;
+}
+
+.date_info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box:hover {
+    background-color: #001;
+    transition: 0.6s;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 6px;
+}
+td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: rgba(9, 109, 9, 0.732);
+}
+.price,.count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: rgba(126, 8, 8, 0.753);
+}
+.count{
+    background-color: rgba(195, 167, 8, 0.666);
+}
